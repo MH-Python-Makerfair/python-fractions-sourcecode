@@ -109,27 +109,79 @@
     <a href="https://mh-python-makerfair.github.io/python-fractions/"><b>Editor</b></a>
     <a href="https://mh-python-makerfair.github.io/python-fractions-process/"><b>The Process</b></a>
     <a href="https://mh-python-makerfair.github.io/python-fractions-sourcecode/"><b>Source Code</b></a>
+    <a href="https://mh-python-makerfair.github.io/python-fractions-credits/"><b>Credits!</b></a>
   </div>
 </div>
 
   </div>
 <h1><br>This is called the source code. This is all of the python code, so if you don't want to follow along in the process page, you can just copy and paste this into the editor and play around with it!</h1>
-  <div class="src">TEST:<br><pre style='color:#d1d1d1;background:#000000;'><span style='color:#e66170; font-weight:bold; '>from</span> colorama <span style='color:#e66170; font-weight:bold; '>import</span> fore<span style='color:#d2cd86; '>,</span> back<span style='color:#d2cd86; '>,</span> style
-var1<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"hello"</span>
-var2<span style='color:#d2cd86; '>=</span><span style='color:#00c4c4; '>"do you want to hear a joke?"</span>
-<span style='color:#e66170; font-weight:bold; '>def</span> yes<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>:</span>
-  <span style='color:#e66170; font-weight:bold; '>print</span><span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"I don't really have any.. sorry"</span><span style='color:#d2cd86; '>)</span>
-<span style='color:#e66170; font-weight:bold; '>def</span> no<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span><span style='color:#d2cd86; '>:</span>
-  <span style='color:#e66170; font-weight:bold; '>print</span><span style='color:#d2cd86; '>(</span><span style='color:#00c4c4; '>"ok! I didn't have any anyway!"</span><span style='color:#d2cd86; '>)</span>
+  <div class="src"><pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(35, 36, 31); color: rgb(248, 248, 242);">num1 = int(input(<span class="hljs-string" style="color: rgb(230, 219, 116);">"Enter the first fraction's numerator:"</span>))
 
-<span style='color:#e66170; font-weight:bold; '>print</span><span style='color:#d2cd86; '>(</span>var1<span style='color:#d2cd86; '>)</span>
-<span style='color:#e66170; font-weight:bold; '>print</span><span style='color:#d2cd86; '>(</span>var2<span style='color:#d2cd86; '>)</span>
+den1 = int(input(<span class="hljs-string" style="color: rgb(230, 219, 116);">"Enter the first fraction's denominator:"</span>))
 
-yes<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span>
+num2 = int(input(<span class="hljs-string" style="color: rgb(230, 219, 116);">"now, enter the second fractions numerator:"</span>))
 
-no<span style='color:#d2cd86; '>(</span><span style='color:#d2cd86; '>)</span>
+den2 = int(input(<span class="hljs-string" style="color: rgb(230, 219, 116);">"and finally, enter the second fraction's denominator:"</span>))
+print(<span class="hljs-string" style="color: rgb(230, 219, 116);">"Thank you!"</span>)
+
+print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'THANK YOU FOR USING THIS CALCULATOR =)\n\n\n\n\n\n\n\n\n\n'</span>)
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num1:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'calculating den1'</span>)
+
+
+
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> den1:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'calculating num2'</span>)
+
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">#SEC == 2</span>
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num2:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'calculating den2'</span>)
+
+
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> den2:
+    print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'COMPARING...'</span>)
+
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">#CALCULATING CODE</span>
+
+secondFracNumber = den1*num2
+
+firstFracNumber = den2*num1
+
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">#FORMATING BREAKS:</span>
+
+print(<span class="hljs-string" style="color: rgb(230, 219, 116);">'\n\n\n\n\n\n\n\n\n\n\n\n'</span>)
+
+<span class="hljs-comment" style="color: rgb(117, 113, 94);">#validating _code_</span>
+
+<span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num1 &lt; den1:
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &gt; secondFracNumber:
+        print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The first fraction is greater then the second fraction! {num1}/{den1} &gt; {num2}/{den2}\n'</span>)
+
+
+    
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &lt; secondFracNumber:
+        print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The second fraction is greater then the first fraction! {num1}/{den1} &lt; {num2}/{den2}\n'</span>)
+        
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> secondFracNumber == firstFracNumber:
+	    print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The fractions are equivalent! {num1}/{den1} = {num2}/{den2}\n\n\t\t\t'</span>)
+    
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> num2 &lt; den2:
+        <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &gt; secondFracNumber:
+            print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The first fraction is greater then the second fraction! {num1}/{den1} &gt; {num2}/{den2}\n'</span>)
+        
+        
+        
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> firstFracNumber &lt; secondFracNumber:
+        print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The second fraction is greater then the first fraction! {num1}/{den1} &lt; {num2}/{den2}\n'</span>)
+        
+    <span class="hljs-keyword" style="color: rgb(249, 38, 114);">if</span> secondFracNumber == firstFracNumber:
+	    print(f<span class="hljs-string" style="color: rgb(230, 219, 116);">'The fractions are equivalent! {num1}/{den1} = {num2}/{den2}\n\n\t\t\t'</span>)
 </pre>
-<!--Created using ToHtml.com on 2021-03-04 20:17:04 UTC --></div>
+</div>
   <br><br><br><br><br><br>
 </body>
 </html>
